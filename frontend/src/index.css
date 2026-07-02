@@ -1,0 +1,536 @@
+:root {
+  --primary: #b8261d;
+  --primary-dark: #831b15;
+  --dark: #1f1f1f;
+  --light: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #555;
+  background: #fff;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Teko", sans-serif;
+  color: var(--dark);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  border-radius: 3px;
+  padding: 13px 28px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.navbar {
+  min-height: 82px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+
+.logo-icon {
+  font-size: 35px;
+}
+
+.brand-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.navbar .nav-link {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 11px;
+  color: #111 !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.hero-section {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-kicker {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: .95;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.hero-title span {
+  color: var(--primary);
+}
+
+.hero-text {
+  color: #f1f1f1;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.section-label {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.about-img {
+  position: relative;
+  height: 470px;
+}
+
+.about-img img {
+  position: absolute;
+  width: 60%;
+  height: 78%;
+  object-fit: cover;
+}
+
+.about-img img:first-child {
+  top: 0;
+  left: 0;
+}
+
+.about-img img:last-child {
+  right: 0;
+  bottom: 0;
+}
+
+.experience-wrap {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.experience-box {
+  width: 105px;
+  height: 105px;
+  border: 5px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Teko", sans-serif;
+  font-size: 4rem;
+  color: var(--dark);
+}
+
+.service-card {
+  position: relative;
+  min-height: 330px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.service-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .12;
+  transition: .4s;
+}
+
+.service-card:hover img {
+  opacity: .22;
+  transform: scale(1.06);
+}
+
+.service-content {
+  position: relative;
+  z-index: 1;
+  padding: 45px 35px;
+}
+
+.service-content h3 {
+  font-size: 2rem;
+}
+
+.service-content p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.service-content a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  transition: .4s;
+}
+
+.project-card:hover img {
+  transform: scale(1.07);
+}
+
+.project-card div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(31,31,31,.82);
+}
+
+.project-card span {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  color: white;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.form-control,
+.form-select {
+  height: 54px;
+  border-radius: 0;
+  border: 1px solid #ddd;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.footer {
+  background: var(--dark);
+  color: #aaa;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .about-img {
+    height: 350px;
+  }
+
+  .navbar {
+    padding: 15px !important;
+  }
+}
+
+/* FINAL FRONTEND POLISH */
+.hero-title {
+  font-size: clamp(2.8rem, 5vw, 4.5rem) !important;
+  line-height: 1 !important;
+}
+
+.hero-text {
+  font-size: 16px !important;
+  max-width: 520px;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  line-height: 1.05;
+}
+
+.service-content h3 {
+  font-size: 1.6rem !important;
+}
+
+.service-content p,
+.about-section p,
+#about p {
+  font-size: 15px !important;
+  line-height: 1.7;
+}
+
+.project-card h3 {
+  font-size: 1.4rem !important;
+}
+
+.navbar .nav-link {
+  font-size: 13px !important;
+}
+
+.brand-name {
+  font-size: 28px !important;
+}
+
+.service-card {
+  min-height: 310px;
+}
+
+.project-card img {
+  height: 290px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.6rem !important;
+  }
+
+  .hero-text {
+    font-size: 15px !important;
+  }
+
+  .section-heading {
+    font-size: 2rem !important;
+  }
+
+  .service-content {
+    padding: 35px 25px;
+  }
+
+  .project-card img {
+    height: 240px;
+  }
+}
+.project-card {
+  display: block;
+  cursor: pointer;
+}
+
+.project-card div {
+  pointer-events: none;
+}
+
+.project-card img {
+  pointer-events: none;
+}
+.project-detail-img {
+  width: 100%;
+  background: #fff;
+}
+.project-hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.project-hero h1 {
+  color: #fff;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+}
+
+.project-hero p {
+  color: #f1f1f1;
+}
+
+.project-info-card {
+  background: #fff;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border-left: 5px solid var(--primary);
+}
+
+.gallery-card {
+  background: #fff;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.project-cta {
+  background: var(--dark);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.project-cta h2 {
+  color: #fff;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.project-cta p {
+  color: #ccc;
+}
+
+.services-section {
+  background: #fff;
+}
+
+.ark-service-card {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  background: #f7f7f7;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ark-service-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+.ark-service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(247, 247, 247, 0.92);
+  transition: 0.5s ease;
+}
+
+.ark-service-content {
+  position: relative;
+  z-index: 2;
+  padding: 45px 35px;
+}
+
+.ark-service-icon {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  margin-bottom: 25px;
+  filter: sepia(1) saturate(6) hue-rotate(330deg) brightness(0.85);
+}
+
+.ark-service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.ark-service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.ark-service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: 0.35s ease;
+}
+
+.ark-service-btn span {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ark-service-card:hover .ark-service-bg {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.ark-service-card:hover::after {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.ark-service-card:hover .ark-service-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ark-service-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
